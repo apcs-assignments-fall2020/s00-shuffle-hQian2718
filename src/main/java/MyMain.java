@@ -10,7 +10,8 @@ public class MyMain {
                 newArr[i] = arr[i / 2 + arr.length / 2];
             }
         }
-        newArr[arr.length - 1] = arr[arr.length - 1];
+
+        if(arr.length > 0) newArr[arr.length - 1] = arr[arr.length - 1];
         return newArr;
     }
 
